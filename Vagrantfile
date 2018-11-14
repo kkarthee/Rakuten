@@ -5,6 +5,7 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/trusty64"
   config.vm.hostname = "rakuten.training"
+  config.vm.box_url = "https://atlas.hashicorp.com/ubuntu/trusty64"
   config.vm.network :private_network, ip: "10.10.10.20"
 
   config.vm.provider :virtualbox do |vb|
