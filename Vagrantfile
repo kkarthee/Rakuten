@@ -1,8 +1,6 @@
-ubuntu/trusty64
+
 # Single box with VirtualBox provider and Puppet provisioning.
 #
-# NOTE: Make sure you have the precise32 base box installed...
-# vagrant box add precise32 http://files.vagrantup.com/precise32.box
 
 Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/trusty64"
